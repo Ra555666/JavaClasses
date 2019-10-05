@@ -3,10 +3,14 @@ public class Book {
     private String name;
     private  String author;
     private  String publisher;
-    private int yearPublish;
+    private int yearOfPublish;
     private int numberOfPages;
     private int price;
     private String typeOfCover;
+
+    public Book(){
+        super();
+    }
 
     public Book(String id, String name, String author) {
         this.id = id;
@@ -46,12 +50,12 @@ public class Book {
         this.publisher = publisher;
     }
 
-    public int getYearPublish() {
-        return yearPublish;
+    public int getYearOfPublish() {
+        return yearOfPublish;
     }
 
-    public void setYearPublish(int yearPublish) {
-        this.yearPublish = yearPublish;
+    public void setYearOfPublish(int yearOfPublish) {
+        this.yearOfPublish = yearOfPublish;
     }
 
     public int getNumberOfPages() {
@@ -76,5 +80,19 @@ public class Book {
 
     public void setTypeOfCover(String typeOfCover) {
         this.typeOfCover = typeOfCover;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", yearOfPublish=" + yearOfPublish +
+                ", numberOfPages=" + numberOfPages +
+                ", price=" + price +
+                ", typeOfCover='" + typeOfCover + '\'' +
+                '}';
     }
 }
