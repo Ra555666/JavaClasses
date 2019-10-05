@@ -1,19 +1,24 @@
 public class Book {
     private String id;
     private String name;
-    private  String author;
-    private  String publisher;
+    private String author;
+    private String publisher;
     private int yearOfPublish;
     private int numberOfPages;
     private int price;
     private String typeOfCover;
 
-    public Book(){
+    public Book() {
         super();
     }
 
     public Book(String id, String name, String author) {
         this.id = id;
+        this.name = name;
+        this.author = author;
+    }
+
+    public Book(String name, String author) {
         this.name = name;
         this.author = author;
     }

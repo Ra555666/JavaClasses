@@ -1,16 +1,26 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Library {
+//    private List<Book> list = new ArrayList<Book>();
 
-    public ArrayList creatingListOfBooks(){
+//    public void addBook(Book book) {
+//        list.add(book);
+//    }
+
+//    public List<Book> getBooks() {
+//        return list;
+//    }
+
+    public ArrayList creatingListOfBooks() {
         ArrayList<Book> list = new ArrayList<Book>();
         Scanner input = new Scanner(System.in);
 
         System.out.println("Do you want add new books?");
         System.out.println("Enter number of products to add: ");
         int countProducts = input.nextInt();
-        for (int i = 0; i < countProducts; i++){
+        for (int i = 0; i < countProducts; i++) {
             Book newBook = new Book();
 
             System.out.println("Enter Id: ");
@@ -39,15 +49,8 @@ public class Library {
 
             list.add(newBook);
         }
-      return list;
+        return list;
     }
 
-    public static void main(String[] args) {
-        Library firstTest = new Library();
-        ArrayList<Library> list = new ArrayList<Library>();
-        list = firstTest.creatingListOfBooks();
-        System.out.println(list.toString());
-
-    }
 
 }
