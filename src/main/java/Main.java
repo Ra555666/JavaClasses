@@ -5,7 +5,7 @@ public class Main {
         Library library = new Library();
         ArrayList<Book> list = library.creatingListOfBooks();
         BookService service = new BookService();
-        service.printElementsByAuthor("a",list);
+        service.printElementsByAuthor("Gogol",list);
 
 //        BookService.createNewBook("Kola","Gavno");
 //        BookService.createNewBook("Kola1","Gavno1");
