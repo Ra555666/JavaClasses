@@ -1,3 +1,5 @@
+package Books;
+
 public class Book {
     private String id;
     private String name;
@@ -89,7 +91,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Books.Book{" +
                 "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", author='" + author + '\'' +

@@ -1,3 +1,5 @@
+package Books;
+
 import java.util.ArrayList;
 
 public class Main {
@@ -7,9 +9,9 @@ public class Main {
         BookService service = new BookService();
         service.printElementsByAuthor("Gogol",list);
 
-//        BookService.createNewBook("Kola","Gavno");
-//        BookService.createNewBook("Kola1","Gavno1");
-//        BookService.createNewBook("Kola2","Gavno2");
-//        System.out.println( BookService.findBookByAuthor("Gavno"));
+//        Books.BookService.createNewBook("Kola","Gavno");
+//        Books.BookService.createNewBook("Kola1","Gavno1");
+//        Books.BookService.createNewBook("Kola2","Gavno2");
+//        System.out.println( Books.BookService.findBookByAuthor("Gavno"));
     }
 }

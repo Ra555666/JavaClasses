@@ -1,15 +1,16 @@
+package Books;
+
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Library {
-//    private List<Book> list = new ArrayList<Book>();
+//    private List<Books.Book> list = new ArrayList<Books.Book>();
 
-//    public void addBook(Book book) {
+//    public void addBook(Books.Book book) {
 //        list.add(book);
 //    }
 
-//    public List<Book> getBooks() {
+//    public List<Books.Book> getBooks() {
 //        return list;
 //    }
 
@@ -74,7 +75,7 @@ public class Library {
             newBook.setTypeOfCover(cover);
 
             list.add(newBook);
-            System.out.println("Book " + newBook.getName() + " is added.");
+            System.out.println("Books.Book " + newBook.getName() + " is added.");
             System.out.println("What is next book?");
 
         }
