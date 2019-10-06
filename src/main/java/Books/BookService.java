@@ -34,9 +34,9 @@ public class BookService {
 
     }
 
-    public static void printElementsByStorageLife(int storageLife, ArrayList<Book> arrayToPrint) {
+    public static void printElementsPublicAfterYear(int yearOfPublish, ArrayList<Book> arrayToPrint) {
         for (Book element : arrayToPrint) {
-            if (storageLife > element.getYearOfPublish()) {
+            if (yearOfPublish > element.getYearOfPublish()) {
                 System.out.println(element.toString());
             }
         }

@@ -8,10 +8,13 @@ public class Main {
         ArrayList<Book> list = library.creatingListOfBooks();
         BookService service = new BookService();
         service.printElementsByAuthor("Gogol",list);
+        service.printElementsByPublisher("ast", list);
+        service.printElementsPublicAfterYear(1986,list);
 
-//        Books.BookService.createNewBook("Kola","Gavno");
-//        Books.BookService.createNewBook("Kola1","Gavno1");
-//        Books.BookService.createNewBook("Kola2","Gavno2");
-//        System.out.println( Books.BookService.findBookByAuthor("Gavno"));
+
+//        Books.BookService.createNewBook("Kola","Gav");
+//        Books.BookService.createNewBook("Kola1","Gav1");
+//        Books.BookService.createNewBook("Kola2","Gav2");
+//        System.out.println( Books.BookService.findBookByAuthor("Gav"));
     }
 }

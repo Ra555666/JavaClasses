@@ -19,7 +19,7 @@ public class Library {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Do you want add new books?");
-        System.out.println("Enter number of products to add: ");
+        System.out.println("What number of books do you want to add in library: ");
         while (!input.hasNextInt()) {
             System.out.println("Input is not a number.");
             input.nextLine();
@@ -34,10 +34,12 @@ public class Library {
             newBook.setId(id);
 
             System.out.println("Enter title: ");
-            newBook.setName(input.nextLine());
+            String title = input.nextLine();
+            newBook.setName(title);
 
             System.out.println("Enter author: ");
-            newBook.setAuthor(input.nextLine());
+            String autor = input.nextLine();
+            newBook.setAuthor(autor);
 
             System.out.println("Enter publisher: ");
             newBook.setPublisher(input.nextLine());
